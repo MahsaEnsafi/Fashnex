@@ -21,3 +21,6 @@ media/
 .idea/
 .DS_Store
 Thumbs.db
+
+Ftest.zip
+*.zip
