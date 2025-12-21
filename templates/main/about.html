@@ -1,0 +1,219 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main>
+    <!-- breadcrumb Start-->
+    <div class="page-notification">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="{% url 'main:index' %}">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{% url 'main:about' %}">about</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb End-->
+    <!-- About Area Start -->
+    <div class="about-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-tittle mb-60 text-center pt-10">
+                        <h2>Our Story</h2>
+                        <p class="pera">
+                            Fashnex began with a simple belief — that style should feel effortless.
+                            We wanted to create a space where everyday confidence meets smart, thoughtful dressing. A
+                            place where inspiration is real, practical, and made for actual daily life — not unrealistic
+                            fashion rules.
+
+                            From clean silhouettes to timeless basics and bold accents, Fashnex celebrates the beauty of
+                            simplicity and the power of personal expression.
+                            Here, style is not about perfection. It’s about discovering what makes you feel most you.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="about-img pb-bottom">
+                        <img src="{% static 'img/gallery/about1.png' %}" alt="Woman in a minimalist neutral outfit" class="w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-tittle mb-60 text-center pt-10">
+                        <h2>Our Mission</h2>
+                        <p class="pera">
+                            Our mission is to help you build a wardrobe that truly works for you — one that fits your
+                            life, your taste, and your everyday moments.
+                            Rather than chasing endless trends, we focus on:
+
+                            wearable, smart outfit ideas
+
+                            minimal yet expressive style
+
+                            building a functional wardrobe
+
+                            confidence through simplicity
+
+                            Every piece of content we share is designed to make dressing easier, smarter, and more
+                            enjoyable.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="about-img pb-bottom">
+                        <img src="{% static 'img/gallery/about2.png' %}" alt="Minimal wardrobe with neatly arranged neutral-toned clothing" class="w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-tittle mb-60 text-center pt-10">
+                        <h2>What We Believe</h2>
+                        <p class="pera">
+                            ✨ Style should inspire, not overwhelm.<br>
+                            ✨ Quality matters more than quantity.<br>
+                            ✨ Everyone can develop a personal style they love.<br>
+                            ✨ Simplicity is powerful.<br>
+
+                            These beliefs shape everything we create — from guides to outfit formulas to minimal
+                            wardrobe tips.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Area End -->
+    <!--? Popular Items Start -->
+    <div class="popular-items">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-popular-items mb-50 text-center">
+                        <div class="popular-img">
+                            <img src="{% static 'img/gallery/popular1.png' %}" alt="">
+                            <div class="img-cap">
+                                <span>Glasses</span>
+                            </div>
+                            <!--
+                            <div class="favorit-items">
+                                <a href="#" class="btn">Shop Now</a>
+                            </div>
+                        -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-popular-items mb-50 text-center">
+                        <div class="popular-img">
+                            <img src="{% static 'img/gallery/popular2.png' %}" alt="">
+                            <div class="img-cap">
+                                <span>Watches</span>
+                            </div>
+                            <div class="favorit-items">
+                                <a href="#" class="btn">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-popular-items mb-50 text-center">
+                        <div class="popular-img">
+                            <img src="{% static 'img/gallery/popular3.png' %}" alt="">
+                            <div class="img-cap">
+                                <span>Jackets</span>
+                            </div>
+                            <!--
+                            <div class="favorit-items">
+                                <a href="#" class="btn">Shop Now</a>
+                            </div>
+                          -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-popular-items mb-50 text-center">
+                        <div class="popular-img">
+                            <img src="{% static 'img/gallery/popular4.png' %}" alt="">
+                            <div class="img-cap">
+                                <span>Clothes</span>
+                            </div>
+                            <div class="favorit-items">
+                                <a href="#" class="btn">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popular Items End -->
+    <!--? Services Area Start -->
+    <div class="categories-area section-padding40 gray-bg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-cat mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                        <!--
+                        <div class="cat-icon">
+                            <img src="{% static 'img/icon/services1.svg' %}" alt="">
+                        </div>
+                    -->
+                        <div class="cat-cap">
+                            <h5>Weekly Style Tips</h5>
+                            <p>Fresh outfit ideas in every new post</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-cat mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                        <!--
+                        <div class="cat-icon">
+                            <img src="{% static 'img/icon/services2.svg' %}" alt="">
+                        </div>
+                    -->
+                        <div class="cat-cap">
+                            <h5>Real-Life Outfits</h5>
+                            <p>Looks you can actually wear every day</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-cat mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                        <!--
+                        <div class="cat-icon">
+                            <img src="{% static 'img/icon/services3.svg' %}" alt="">
+                        </div>
+                    -->
+                        <div class="cat-cap">
+                            <h5>Simple, Practical Guides</h5>
+                            <p>Easy tips for building a wearable wardrobe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-cat wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                        <!--
+                        <div class="cat-icon">
+                            <img src="{% static 'img/icon/services4.svg' %}" alt="">
+                        </div>
+                    -->
+                        <div class="cat-cap">
+                            <h5>Curated by Fashnex</h5>
+                            <p>Handpicked advice to refine your personal style</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--? Services Area End -->
+</main>
+{% endblock %}

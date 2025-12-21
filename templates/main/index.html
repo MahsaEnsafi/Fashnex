@@ -1,0 +1,386 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main>
+    <!--? Hero Area Start-->
+    <div class="container-fluid">
+        <div class="slider-area">
+            <!-- Mobile Device Show Menu-->
+            <div class="header-right2 d-flex align-items-center">
+                <!-- Social -->
+                <div class="header-social  d-block d-md-none">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+                <!-- Search Box -->
+                <div class="search d-block d-md-none">
+                    <ul class="d-flex align-items-center">
+                        <li class="mr-15">
+                            <div class="nav-search search-switch">
+                                <i class="ti-search"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card-stor">
+                                <img src="{% static 'img/gallery/card.svg' %}" alt="Shopping bag icon">
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /End mobile  Menu-->
+
+            
+            <div class="slider-active dot-style">
+                
+                <!-- Single -->
+                <div class="single-slider slider-bg1 hero-overly slider-height d-flex align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-8 col-lg-9">
+                                <!-- Hero Caption -->
+                                <div class="hero__caption">
+                                    <h1>
+                                        A space for style
+                                    </h1>
+                                    <a href="{% url 'blog:blog_home' %}" class="btn">
+                                        Explore the Blog
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single -->
+                <div class="single-slider slider-bg2 hero-overly slider-height d-flex align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="hero__caption">
+                                    <h1>
+                                        A space for style
+                                    </h1>
+                                    <a href="{% url 'blog:blog_home' %}" class="btn">
+                                        Explore the Blog
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single -->
+                <div class="single-slider slider-bg3 hero-overly slider-height d-flex align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-8 col-lg-9">
+                                <!-- Hero Caption -->
+                                <div class="hero__caption">
+                                    <h1>
+                                        A space for style
+                                    </h1>
+                                    <a href="{% url 'blog:blog_home' %}" class="btn">
+                                        Explore the Blog
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Hero -->
+    <!--? Popular Items Start -->
+    <div class="popular-items pt-50">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-popular-items mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                        data-wow-delay=".1s">
+                        <div class="popular-img">
+                            <img src="{% static 'img/gallery/style-guide.png' %}" alt="Style guides category cover image">
+                            <div class="img-cap">
+                                <span>STYLE GUIDES</span>
+                            </div>
+                            <div class="favorit-items">
+                                <a href="{% url 'blog:category' cat_name='Style Guide' %}" class="btn">Read Guides</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-popular-items mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                        data-wow-delay=".2s">
+                        <div class="popular-img">
+                            <img src="{% static 'img/gallery/Timeless Accessories.png' %}" alt="Timeless accessories category cover image">
+                            <div class="img-cap">
+                                <span>Timeless Accessories</span>
+                            </div>
+                            <div class="favorit-items">
+                                <a href="{% url 'blog:category' cat_name='Accessories' %}" class="btn">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-popular-items mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                        data-wow-delay=".4s">
+                        <div class="popular-img">
+                            <img src="{% static 'img/gallery/active-wear.png' %}" alt="Activewear outfit inspiration">
+                            <div class="img-cap">
+                                <span>Activewear</span>
+                            </div>
+                            <div class="favorit-items">
+                                <a href="{% url 'blog:category' cat_name='Activewear' %}" class="btn">View Style Tips</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-popular-items mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                        data-wow-delay=".6s">
+                        <div class="popular-img">
+                            <img src="{% static 'img/gallery/outfits.png' %}" alt="Everyday outfit inspiration">
+                            <div class="img-cap">
+                                <span>Outfits</span>
+                            </div>
+                            <div class="favorit-items">
+                                <a href="{% url 'blog:category' cat_name='Outfits' %}" class="btn">See Outfit Ideas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popular Items End -->
+    <!--? New Arrival Start -->
+    <div class="new-arrival">
+        <div class="container">
+            <!-- Section tittle -->
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-10">
+                    <div class="section-tittle mb-60 text-center wow fadeInUp" data-wow-duration="2s"
+                        data-wow-delay=".2s">
+                        <h2>Style<br>Inspiration</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-new-arrival mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                        data-wow-delay=".1s">
+                        <div class="popular-img">
+                            <img src="{% static 'img/gallery/insp1.png' %}" alt="Folded knit sweaters for fall layering">
+                             <div class="favorit-items">
+                                 <span class="flaticon-heart"></span> 
+                                <img src="{% static 'img/gallery/favorit-card.png' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="popular-caption">
+                            <h3><a href="{% url 'blog:category' cat_name='Fall Layers' %}">Fall Layers</a></h3>
+                            <div class="rating mb-10">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                     <!--       <span>$ 30.00</span>  -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-new-arrival mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                        data-wow-delay=".2s">
+                        <div class="popular-img">
+                            <img src="{% static 'img/gallery/Hoodie.png' %}" alt="Neutral hoodie hanging on a rack">
+                            <div class="favorit-items">
+                                <!-- <span class="flaticon-heart"></span> -->
+                                <img src="{% static 'img/gallery/favorit-card.png' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="popular-caption">
+                            <h3><a href="{% url 'blog:category' cat_name='Hoodies' %}">Hoodie Essentials</a></h3>
+                            <div class="rating mb-10">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                           <!-- <span>$ 30.00</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-new-arrival mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                        data-wow-delay=".3s">
+                        <div class="popular-img">
+                            <img src="{% static 'img/gallery/Scarves & Beanies.png' %}" alt="carves and beanies for cold weather">
+                            <div class="favorit-items">
+                                <!-- <span class="flaticon-heart"></span> -->
+                                <img src="{% static 'img/gallery/favorit-card.png' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="popular-caption">
+                            <h3><a href="{% url 'blog:category' cat_name='Scarves & Beanies' %}">Scarves & Beanies</a></h3>
+                            <div class="rating mb-10">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <!--
+                            <span>$ 30.00</span>
+                        -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-new-arrival mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                        data-wow-delay=".4s">
+                        <div class="popular-img">
+                            <img src="{% static 'img/gallery/bag.png' %}" alt="Minimal everyday handbag">
+                            <div class="favorit-items">
+                                <!-- <span class="flaticon-heart"></span> -->
+                                <img src="{% static 'img/gallery/favorit-card.png' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="popular-caption">
+                            <h3><a href="{% url 'blog:category' cat_name='Bags' %}">Everyday Bags</a></h3>
+                            <div class="rating mb-10">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <!--
+                            <span>$ 30.00</span>
+                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Button -->
+            <div class="row justify-content-center">
+                <div class="room-btn">
+                    <a href="{% url 'blog:blog_home' %}" class="border-btn">Browse More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--? New Arrival End -->
+    <!--? collection -->
+    <section class="collection section-bg2 section-padding30 section-over1 ml-15 mr-15"
+        data-background="{% static 'img/gallery/section_bg01.png' %}">
+        <div class="container-fluid"></div>
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-9">
+                <div class="single-question text-center">
+                    <h2 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                        Style Tips for Modern Women
+                    </h2>
+                    <a href="#" class="btn class=" wow fadeInUp" data-wow-duration="2s"
+                        data-wow-delay=".4s">Read More</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- End collection -->
+    <!--? Popular Locations Start 01-->
+    <div class="popular-product pt-50">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="single-product mb-50">
+                        <div class="location-img">
+                            <img src="{% static 'img/gallery/colors.png' %}" alt="Woman in denim jacket with colorful background">
+                        </div>
+                        <div class="location-details">
+                            <p><a href="{% url 'blog:tag' tag_name='complementary colors' %}">Mastering Complementary Colors</a></p>
+                            <a href="{% url 'blog:tag' tag_name='complementary colors' %}" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="single-product mb-50">
+                        <div class="location-img">
+                            <img src="{% static 'img/gallery/popular-imtes2.png' %}" alt="Pair of neutral heels on the floor">
+                        </div>
+                        <div class="location-details">
+                            <p><a href="{% url 'blog:tag' tag_name='Accessories' %}">Top Trending Accessories in 2025</a></p>
+                            <a href="product_details.html" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popular Locations End -->
+    <!--? Services Area Start -->
+    <div class="categories-area section-padding40 gray-bg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-cat mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                        <!--
+                        <div class="cat-icon">
+                            <img src="{% static 'img/icon/services1.svg' %}" alt="">
+                        </div>
+                    -->
+                        <div class="cat-cap">
+                            <h5>Weekly Style Tips</h5>
+                            <p>Fresh outfit ideas in every new post</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-cat mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                        <!--
+                        <div class="cat-icon">
+                            <img src="{% static 'img/icon/services2.svg' %}" alt="">
+                        </div>
+                    -->
+                        <div class="cat-cap">
+                            <h5>Real-Life Outfits</h5>
+                            <p>Looks you can actually wear every day</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-cat mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                        <!--
+                        <div class="cat-icon">
+                            <img src="{% static 'img/icon/services3.svg' %}" alt="">
+                        </div>
+                    -->
+                        <div class="cat-cap">
+                            <h5>Simple, Practical Guides</h5>
+                            <p>Easy tips for building a wearable wardrobe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-cat wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                        <!--
+                        <div class="cat-icon">
+                            <img src="{% static 'img/icon/services4.svg' %}" alt="">
+                        </div>
+                    -->
+                        <div class="cat-cap">
+                            <h5>Curated by Fashnex</h5>
+                            <p>Handpicked advice to refine your personal style</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--? Services Area End -->
+</main>
+{% endblock %}

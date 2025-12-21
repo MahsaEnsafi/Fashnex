@@ -1,0 +1,22 @@
+{
+  "platform": "django",
+  "django": {
+    "pythonVersion": "3.11",
+    "collectStatic": true,
+    "compileMessages": false,
+    "modifySettings": true,
+    "timezone": "Asia/Tehran"
+    
+  },
+  "app": "fashnex",
+  "disks": [
+    {
+      "name": "static",
+      "mountTo": "static"
+    },
+    {
+      "name": "media",
+      "mountTo": "media"
+    }
+  ]
+}

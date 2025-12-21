@@ -1,0 +1,17 @@
+{% load static %}
+{% load humanize %}
+<aside class="single_sidebar_widget popular_post_widget">
+    <h3 class="widget_title" style="color: #2d2d2d;">Recent Post</h3>
+    {% for post in posts %}
+    <div class="media post_item">
+        <img class="img-fluid tag-post-image" src="{{ post.image.url }}" alt="post">
+        <div class="media-body">
+            <a href="{% url 'blog:blog_details' id=post.id %}">
+                <h3 style="color: #2d2d2d;">{{ post.title }}</h3>
+            </a>
+            <p>{{ post.published_date|naturaltime}}</p>
+        </div>
+    </div>
+    
+        {% endfor %}
+</aside>

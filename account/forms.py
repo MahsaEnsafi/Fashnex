@@ -1,0 +1,26 @@
+from django import forms
+from django.contrib.auth.models import User
+from django.contrib.auth.forms import UserCreationForm
+
+class SignUpForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ['username', 'email', 'password1', 'password2']
+
+    def clean_email(self):
+        email = self.cleaned_data.get('email', '').lower()
+
+        if not email:
+            raise forms.ValidationError('Email is required.')
+
+        if User.objects.filter(email__iexact=email).exists():
+            raise forms.ValidationError('This email has already been registered.')
+
+        return email
+    def save(self, commit = True):
+        user=super().save(commit=False)
+        user.email = self.cleaned_data['email']
+        if commit:
+            user.save()
+        return user
