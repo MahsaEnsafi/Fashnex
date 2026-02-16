@@ -32,7 +32,8 @@ ALLOWED_HOSTS = [
     "fashnex.liara.run",
     "fashnex.ir",
     "www.fashnex.ir",
-    "127.0.0.1", "localhost"
+    "127.0.0.1", "localhost",
+    ".onrender.com"
 ]
 
 
