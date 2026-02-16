@@ -29,12 +29,11 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = os.getenv("DEBUG", "False").lower() == "true"
 
 ALLOWED_HOSTS = [
-    "fashnex.liara.run",
-    "fashnex.ir",
-    "www.fashnex.ir",
-    "127.0.0.1", "localhost",
-    ".onrender.com"
+    "fashnex.pythonanywhere.com",
+    "127.0.0.1",
+    "localhost",
 ]
+
 
 
 # Application definition
